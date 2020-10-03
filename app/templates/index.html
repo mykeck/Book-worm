@@ -1,0 +1,25 @@
+ {% extends 'base.html'%} {% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %}
+<body>
+    {% block content %}
+    <h3 style="text-align:center"> {{title}}</h3>
+
+        <div style="text-align:center">
+        <div class="row">
+        {%for image,book_title, author in books%}
+        <div class="col-md-4 p-3">
+        <div class = "card">
+        <div>
+        <img class="card-image" style="width:40%;text-align:center" src="{{image}} ">
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">{{book_title}}</h5>
+        <p class="card-text"> Author: {{author}}</p>
+        <a href="#" class="btn btn-primary">View Book</a>
+        </div>
+        </div>
+        </div>
+        {%endfor%}
+         </div>
+    {% endblock%}
+</body>

@@ -1,0 +1,16 @@
+body {
+font-family:sans-serif;
+background:url("egypt.jpg");
+background-size: cover;
+background-blend-mode: overlay;
+background-color:rgb(231, 227, 227);
+}
+
+form {
+    padding: 70px;
+    background-color:rgb(77, 68, 68);
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
